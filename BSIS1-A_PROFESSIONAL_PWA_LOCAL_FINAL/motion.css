@@ -1,0 +1,13 @@
+@keyframes page-arrive{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@keyframes badge-arrive{from{opacity:0;transform:scale(.9)}to{opacity:1;transform:scale(1)}}
+@keyframes indicator-breathe{0%,100%{box-shadow:0 0 0 3px rgba(74,222,128,.1)}50%{box-shadow:0 0 0 6px rgba(74,222,128,.02)}}
+@keyframes scan-sweep{from{top:18%}to{top:82%}}
+@keyframes frame-breathe{0%,100%{box-shadow:0 0 0 999px rgba(0,0,0,.08),0 0 8px rgba(88,196,255,.25)}50%{box-shadow:0 0 0 999px rgba(0,0,0,.08),0 0 18px rgba(88,196,255,.7)}}
+.app>.topbar,.app>.page-tabs,.app>.hero,.app>.panel,.app>.page-head,.app>.tools,.app>.filters,.app>.list,.app>.footer{animation:page-arrive .42s cubic-bezier(.2,.7,.2,1) both}
+.app>.page-tabs{animation-delay:.04s}.app>.hero,.app>.page-head{animation-delay:.08s}.app>.panel:nth-of-type(2){animation-delay:.12s}.app>.panel:nth-of-type(3){animation-delay:.16s}.app>.panel:nth-of-type(4){animation-delay:.2s}
+.brand-mark{animation:badge-arrive .62s cubic-bezier(.2,.75,.25,1) both;transform-origin:center}
+.dot{animation:indicator-breathe 2s ease-in-out infinite}
+.student{animation:page-arrive .28s ease both}
+.scanner-box.is-scanning::after{content:"";position:absolute;z-index:5;left:12%;right:12%;top:18%;height:2px;border-radius:2px;background:linear-gradient(90deg,transparent,#58c4ff 18%,#effaff 50%,#58c4ff 82%,transparent);box-shadow:0 0 10px rgba(88,196,255,.8);pointer-events:none;animation:scan-sweep 1.8s ease-in-out infinite alternate}
+.scanner-box.is-scanning .scan-guide{border-color:#58c4ff;animation:frame-breathe 1.8s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
