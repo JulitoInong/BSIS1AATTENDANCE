@@ -1,0 +1,19 @@
+{
+  "name": "BSIS 1-A Attendance",
+  "short_name": "BSIS 1-A",
+  "description": "QR attendance system for BSIS 1-A",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f5f7fb",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "ChatGPT%20Image%20Aug%209,%202026,%2004_55_02%20PM.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
