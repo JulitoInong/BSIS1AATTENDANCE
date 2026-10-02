@@ -10,10 +10,16 @@
   "theme_color": "#0f172a",
   "icons": [
     {
-      "src": "ChatGPT%20Image%20Aug%209,%202026,%2004_55_02%20PM.png",
-      "sizes": "1254x1254",
-      "type": "image/png",
+      "src": "./bsis1a-home-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
       "purpose": "any"
+    },
+    {
+      "src": "./bsis1a-home-icon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
     }
   ]
 }
