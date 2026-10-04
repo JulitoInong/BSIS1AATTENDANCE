@@ -12,7 +12,7 @@
 - Duplicate prevention per student and session; attendance records remain stored by local date.
 - Professional mobile-first UI with summary cards.
 - Each mode has its own attendance list and searchable roster page; session records show time and status per slot.
-- Local CSV export with separate time and status columns for all four attendance sessions.
+- CSV exports include attendance date, local export timestamp, attendance mode, student identity, overall status, and recorded check-in/session times. Session exports include a separate status column for each of the four time slots.
 - PWA manifest, install support, icons, and service-worker caching.
 - No Supabase, cloud database, or cloud sync.
 

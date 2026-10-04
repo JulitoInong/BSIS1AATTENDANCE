@@ -23,7 +23,7 @@
 <div class="tools"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search by name or student number" autocomplete="off"></label></div>
 <div class="filters" role="group" aria-label="Filter students"><button type="button" class="filter active" data-filter="all">All</button><button type="button" class="filter" data-filter="present">Present</button><button type="button" class="filter" data-filter="absent">Absent</button></div>
 <div id="rosterList" class="list" aria-live="polite"></div>
-<div class="footer">BSIS 1-A • Attendance records are saved on this device.</div>
+<div class="footer">BSIS 1-A • Attendance records are saved on this device.<span class="footer-credit">Built by Julito Inong, Class President</span></div>
 </main>
 <dialog id="studentDialog" class="student-dialog" aria-labelledby="studentDetailName"><div class="dialog-inner"><div class="dialog-head"><div><div class="eyebrow">Student details</div><h3 id="studentDetailName">—</h3></div><button type="button" class="close" aria-label="Close student details">×</button></div><dl class="meta"><div><dt>Student No.</dt><dd id="studentDetailNo">—</dd></div><div><dt>Attendance</dt><dd id="studentDetailStatus">—</dd></div><div><dt>Morning Time In</dt><dd id="studentMorningIn">—</dd></div><div><dt>Morning Time Out</dt><dd id="studentMorningOut">—</dd></div><div><dt>Afternoon Time In</dt><dd id="studentAfternoonIn">—</dd></div><div><dt>Afternoon Time Out</dt><dd id="studentAfternoonOut">—</dd></div><div id="studentLegacyTimeRow" hidden><dt>Previous check-in</dt><dd id="studentLegacyTime">—</dd></div></dl></div></dialog>
 <script src="./roster-data.js"></script>
