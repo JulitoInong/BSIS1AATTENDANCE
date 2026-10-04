@@ -1,5 +1,5 @@
-const CACHE_NAME="bsis1a-v40";
-const APP_SHELL=["./","./index.html","./session-attendance.html","./roster.html","./session-roster.html","./roster-data.js","./motion.css","./theme.js","./splash.js","./scanner-loader.js","./manifest.webmanifest","./icon-192.png","./icon-512.png","./icon-512-maskable.png","./bsis1a-home-icon.svg","./bsis1a-home-icon-maskable.svg","./ChatGPT%20Image%20Aug%209,%202026,%2004_55_02%20PM.png"];
+const CACHE_NAME="bsis1a-v41";
+const APP_SHELL=["./","./index.html","./session-attendance.html","./roster.html","./session-roster.html","./roster-data.js","./motion.css","./theme.js","./scanner-loader.js","./manifest.webmanifest","./bsis1a-icon-192.png","./bsis1a-icon-512.png","./bsis1a-icon-maskable-512.png","./bsis1a-home-icon.svg","./bsis1a-home-icon-maskable.svg","./ChatGPT%20Image%20Aug%209,%202026,%2004_55_02%20PM.png"];
 self.addEventListener("install",event=>{event.waitUntil(caches.open(CACHE_NAME).then(c=>c.addAll(APP_SHELL)).then(()=>self.skipWaiting()))});
 self.addEventListener("activate",event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE_NAME).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
 self.addEventListener("fetch",event=>{const req=event.request;if(req.method!=="GET")return;const url=new URL(req.url);
