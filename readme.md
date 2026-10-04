@@ -11,8 +11,10 @@
 - Morning time-out is on time from 11:30 AM–12:00 PM; afternoon time-out is on time from 4:30–5:00 PM. Scans outside the selected session's expected time are still recorded and marked early or late.
 - Duplicate prevention per student and session; attendance records remain stored by local date.
 - Professional mobile-first UI with summary cards.
+- Material 3-inspired light and dark themes with a header toggle; the selected theme is saved locally and shared across app pages.
+- Branded launch splash with an animated loading indicator, a short timeout fallback, and reduced-motion support.
 - Each mode has its own attendance list and searchable roster page; session records show time and status per slot.
-- CSV exports include attendance date, local export timestamp, attendance mode, student identity, overall status, and recorded check-in/session times. Session exports include a separate status column for each of the four time slots.
+- CSV exports are deliberately separate: Regular Attendance exports its check-in record, while Time In / Out exports Morning Time In/Out and Afternoon Time In/Out with a separate status column for each slot. The session export's “Any Attendance Recorded?” column uses Yes/No so it cannot be confused with an individual slot status such as Late; the legacy regular check-in column is explicitly labeled.
 - PWA manifest, install support, icons, and service-worker caching.
 - No Supabase, cloud database, or cloud sync.
 
