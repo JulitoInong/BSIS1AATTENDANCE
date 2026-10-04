@@ -12,7 +12,8 @@
 - Duplicate prevention per student and session; attendance records remain stored by local date.
 - Professional mobile-first UI with summary cards.
 - Material 3-inspired light and dark themes with a header toggle; the selected theme is saved locally and shared across app pages.
-- Branded launch splash with an animated loading indicator, a short timeout fallback, and reduced-motion support.
+- Branded launch splash with an animated loading indicator, shown only when the installed PWA opens from the home screen; internal page navigation skips it. Includes a short timeout fallback and reduced-motion support.
+- The QR scanner library loads only when the camera is started, keeping the initial attendance page lighter on mobile.
 - Each mode has its own attendance list and searchable roster page; session records show time and status per slot.
 - CSV exports are deliberately separate: Regular Attendance exports its check-in record, while Time In / Out exports Morning Time In/Out and Afternoon Time In/Out with a separate status column for each slot. The session export's “Any Attendance Recorded?” column uses Yes/No so it cannot be confused with an individual slot status such as Late; the legacy regular check-in column is explicitly labeled.
 - PWA manifest, install support, icons, and service-worker caching.

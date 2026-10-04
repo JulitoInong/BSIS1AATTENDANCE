@@ -1,4 +1,10 @@
 (() => {
+  const standalone = window.matchMedia("(display-mode: standalone)").matches
+    || window.navigator.standalone === true;
+  const sameAppReferrer = document.referrer
+    && new URL(document.referrer).origin === window.location.origin;
+  if (!standalone || sameAppReferrer) return;
+
   const startedAt = performance.now();
   const style = document.createElement("style");
   style.textContent = `
